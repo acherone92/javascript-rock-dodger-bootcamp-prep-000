@@ -73,6 +73,7 @@ function createRock(x) {
     } else {
       console.log('removed' + game.rock);
       game.removeChild(rock);
+      debugger;
     }
       
     if (checkCollision(rock)===true){

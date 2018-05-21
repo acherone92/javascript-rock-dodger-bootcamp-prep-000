@@ -101,7 +101,7 @@ function endGame() {
   console.log(rocks +"rocks before removal");
   
   for (i=0; i<rocks.length; i++){
-    document. removeChild(rocks[i]);
+    document.removeChild(rocks[i]);
   }
   console.log(rocks +"rocks after removal");
   

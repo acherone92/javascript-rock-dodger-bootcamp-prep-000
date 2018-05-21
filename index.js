@@ -72,10 +72,10 @@ function createRock(x) {
     window.requestAnimationFrame(moveRock);
     } else {
       console.log(ROCKS);
-      console.log('removed ' + game.rock);
+      console.log('removed ' + game.querySelector('.rock'));
       console.log('game');
       console.log(game);
-      game.removeChild(rock);
+      game.removeChild('.rock');
       debugger;
     }
       

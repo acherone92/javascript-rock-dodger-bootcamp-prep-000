@@ -73,7 +73,6 @@ function createRock(x) {
         }
     if (checkCollision(rock)===true){
       endGame();
-      debugger;
     }
     else if (top > GAME_HEIGHT) {
       console.log('removed' + game.querySelector('.rock'));

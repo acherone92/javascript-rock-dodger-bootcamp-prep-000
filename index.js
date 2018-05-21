@@ -98,7 +98,7 @@ function createRock(x) {
 function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
-  for (i=0; i<ROCKS.length; i++){
+  for (var i=0; i<ROCKS.length; i++){
     console.log(ROCKS);
     console.log(GAME.querySelector('.rock'));
     document.removeChild(GAME.querySelector('.rock'));

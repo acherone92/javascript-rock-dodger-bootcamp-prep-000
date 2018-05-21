@@ -112,6 +112,8 @@ function endGame() {
   for (i=0; i<ROCKS.length; i++){
     document.removeChild(ROCKS[i]);
   }
+  console.log(ROCKS);
+  console.log(document.querySelector('.rocks'));
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');
 }

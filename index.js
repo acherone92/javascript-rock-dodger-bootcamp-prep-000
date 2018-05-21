@@ -105,6 +105,7 @@ function endGame() {
     console.log('removed');
     console.log(game.querySelector('.rock'));
     console.log(ROCKS);
+    debugger;
   }
   
   

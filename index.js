@@ -101,7 +101,7 @@ function endGame() {
   for (i=0; i<ROCKS.length; i++){
     game.removeChild(game.querySelector('.rock'));
   }
-  console.log(rocks +"rocks after removal");
+  console.log(ROCKS +"rocks after removal");
   
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');

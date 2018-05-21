@@ -109,8 +109,9 @@ function createRock(x) {
 function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
-  ROCKS.splice(0,ROCKS.length);
-  console.log(ROCKS);
+  for (i=0; i<ROCKS.length; i++){
+    document
+  }
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');
 }

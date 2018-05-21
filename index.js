@@ -75,13 +75,11 @@ function createRock(x) {
       endGame();
     }
     function removeRock(){
-      if (top > GAME_HEIGHT) {
+    if (top > GAME_HEIGHT) {
       console.log('removed' + game.querySelector('.rock'));
       game.removeChild(rock);
       debugger;
       }
-    }
-    
     }
   
     

@@ -75,7 +75,7 @@ function createRock(x) {
     } else {
       console.log('removed' + game.rock);
       game.removeChild(rock);  
-    }
+      }
   
   
   // We should kick of the animation of the rock around here
@@ -85,7 +85,7 @@ function createRock(x) {
   ROCKS.push(rock);
 
   return rock;
-}
+    }
 
 /**
  * End the game by clearing `gameInterval`,

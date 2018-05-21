@@ -55,13 +55,13 @@ function createRock(x) {
   rock.style.left = `${x}px`;
 
   var top = 0;
-  game.appendChild(rock);
-
+  
   /**
    * Now that we have a rock, we'll need to append
    * it to GAME and move it downwards.
    */
-  game.appendChild(rock);
+  document.game.appendChild(rock);
+  
   /**
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)   */
@@ -97,7 +97,7 @@ function createRock(x) {
 function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
-  console.log(game.childNodes());
+  console.log(document.game.first);
   for (i=0; i<ROCKS.length; i++){
     document.removeChild(game.ROCKS[i]);
   }

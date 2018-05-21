@@ -71,15 +71,13 @@ function createRock(x) {
     if (top < GAME_HEIGHT){
     window.requestAnimationFrame(moveRock);
     } else if (checkCollision(rock)===true){
-      endGame();
+        endGame();
     } else {
-       
+      console.log('removed' + game.rock);
+      game.removeChild(rock);  
     }
   
-   if (top > GAME_HEIGHT) {
-      console.log('removed' + game.rock)
-      game.removeChild(rock);
-      }
+  
   // We should kick of the animation of the rock around here
   window.requestAnimationFrame(moveRock);
 

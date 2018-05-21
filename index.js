@@ -108,7 +108,7 @@ function createRock(x) {
 function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
-  console.log(toStRrOCKS);
+  console.log(ROCKS.toString());
   for (var i in ROCKS){
     document.removeChild('.rock');
     console.log(ROCKS);

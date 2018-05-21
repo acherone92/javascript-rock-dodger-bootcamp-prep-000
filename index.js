@@ -109,9 +109,7 @@ function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
   console.log(ROCKS.toString());
-  for (i=0; i< ROCKS.length; i ++){
-    document.removeChild(ROCKS[i]);
-    console.log(ROCKS);
+  document.removeChild(ROCKS);
   }
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');

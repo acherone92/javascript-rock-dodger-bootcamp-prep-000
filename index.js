@@ -97,10 +97,9 @@ function createRock(x) {
 function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
-  console.log(document);
   
   for (i=0; i<ROCKS.length; i++){
-    game.removeChild('div');
+    document.removeChild(game.ROCKS[i]);
   }
   console.log(rocks +"rocks after removal");
   

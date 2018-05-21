@@ -99,7 +99,7 @@ function endGame() {
   clearInterval(gameInterval);
   console.log(ROCKS.toString());
   for (i=0; i< ROCKS.length; i ++){
-    ROCKS.pop(ROCKS[i])
+    ROCKS.pop(ROCKS[i]);
   }
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');

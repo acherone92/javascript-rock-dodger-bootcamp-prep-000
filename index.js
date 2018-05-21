@@ -77,7 +77,7 @@ function createRock(x) {
       }
   
     if (top > GAME_HEIGHT) {
-      console.log(game.rock)
+      console.log('removed' + game.rock)
       game.removeChild(rock);
       }
   // We should kick of the animation of the rock around here

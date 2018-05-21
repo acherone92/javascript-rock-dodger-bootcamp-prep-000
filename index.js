@@ -100,7 +100,7 @@ function endGame() {
   console.log(document);
   
   for (i=0; i<ROCKS.length; i++){
-    document.removeChild('div');
+    game.removeChild('div');
   }
   console.log(rocks +"rocks after removal");
   

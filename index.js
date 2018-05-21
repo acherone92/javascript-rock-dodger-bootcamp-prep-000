@@ -72,8 +72,7 @@ function createRock(x) {
     window.requestAnimationFrame(moveRock);
         }
     if (checkCollision(rock)===true){
-    console.log('collision!');
-    endGame();
+      endGame();
     }
       }
   /**

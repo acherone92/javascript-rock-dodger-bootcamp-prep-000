@@ -98,13 +98,13 @@ function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
   console.log(game);
-  debugger;
+  
   for (i=0; i<ROCKS.length; i++){
     game.removeChild(game.querySelector('.rock'));
     console.log(game);  
-    
+    debugger;
   }
-  debugger;
+  
   
   
   window.removeEventListener('keydown', moveDodger);

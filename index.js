@@ -99,6 +99,7 @@ function endGame() {
   clearInterval(gameInterval);
   console.log(game);
   for (i=0; i<ROCKS.length; i++){
+    debugger;
     game.removeChild(game.querySelector('.rock'));
   }
   console.log(ROCKS +"rocks after removal");

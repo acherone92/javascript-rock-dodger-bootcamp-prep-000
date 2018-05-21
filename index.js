@@ -70,15 +70,19 @@ function createRock(x) {
     rock.style.top = `${top += 2}px`;
     if (top < GAME_HEIGHT){
     window.requestAnimationFrame(moveRock);
-    }
-    if (checkCollision(rock)===true){
-        endGame();
     } else {
       console.log('removed' + game.rock);
-      game.removeChild(rock);  
+      game.removeChild(rock);
+    }
+      
+    if (checkCollision(rock)===true){
+      endGame();
+    }
       }
-  }
   
+    if (top > GAME_HEIGHT) {
+      
+      }
   // We should kick of the animation of the rock around here
   window.requestAnimationFrame(moveRock);
 
@@ -86,7 +90,7 @@ function createRock(x) {
   ROCKS.push(rock);
 
   return rock;
-    }
+}
 
 /**
  * End the game by clearing `gameInterval`,

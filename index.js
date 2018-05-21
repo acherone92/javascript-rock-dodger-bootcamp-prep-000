@@ -99,9 +99,9 @@ function endGame() {
   clearInterval(gameInterval);
   console.log(game);
   for (i=0; i<ROCKS.length; i++){
-    debugger;
     game.removeChild(game.querySelector('.rock'));
   }
+  debugger;
   console.log(ROCKS +"rocks after removal");
   
   window.removeEventListener('keydown', moveDodger);

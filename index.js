@@ -72,13 +72,8 @@ function createRock(x) {
     if (top < GAME_HEIGHT){
     window.requestAnimationFrame(moveRock);
     } else {
-        console.log(ROCKS);
         game.removeChild(rock);
         ROCKS.pop(rock);
-        console.log('removed');
-        console.log(game.querySelector('.rock'));
-        console.log(ROCKS);
-        debugger;
         }
     
     if (checkCollision(rock)===true){
@@ -107,10 +102,13 @@ function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
   for (i=0; i<ROCKS.length; i++){
+    console.log(ROCKS);
     game.removeChild(game.querySelector('.rock'));
-    
-     
-    
+    ROCKS.pop(rock);
+    console.log('removed');
+    console.log(game.querySelector('.rock'));
+    console.log(ROCKS);
+    debugger;
   }
   
   

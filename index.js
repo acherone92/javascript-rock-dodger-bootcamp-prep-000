@@ -104,7 +104,7 @@ function endGame() {
     console.log(game.querySelector('.rock'));
     game.removeChild(game.querySelector('.rock'));
     console.log('for');
-    console.log('for' + game);  
+    console.log(game);  
     debugger;
   }
   

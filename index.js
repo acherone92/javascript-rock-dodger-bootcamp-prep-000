@@ -98,9 +98,7 @@ function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
   console.log(document.getElementsByClassName('rock'));
-  for (i=0; i< ROCKS.length; i ++){
-    ROCKS.pop(ROCKS[i]);
-  }
+  document.removeChild(.rock);
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');
 }

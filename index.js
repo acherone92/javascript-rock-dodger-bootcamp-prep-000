@@ -70,7 +70,8 @@ function createRock(x) {
     rock.style.top = `${top += 2}px`;
     if (top < GAME_HEIGHT){
     window.requestAnimationFrame(moveRock);
-    } else if (checkCollision(rock)===true){
+    }
+    if (checkCollision(rock)===true){
         endGame();
     } else {
       console.log('removed' + game.rock);

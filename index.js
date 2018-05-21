@@ -97,7 +97,7 @@ function createRock(x) {
 function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
-  console.log(ROCKS.toString());
+  console.log(document.getElementsByCLa;s
   for (i=0; i< ROCKS.length; i ++){
     ROCKS.pop(ROCKS[i]);
   }

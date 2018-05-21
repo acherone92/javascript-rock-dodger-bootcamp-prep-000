@@ -98,16 +98,13 @@ function createRock(x) {
 function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
+  window.removeEventListener('keydown', moveDodger);
+  alert('YOU LOSE!');
   for (var i=0; i<ROCKS.length; i++){
     document.removeChild(GAME.querySelector('.rock'));
     debugger;
+    }
   }
-  
-  
-  
-  window.removeEventListener('keydown', moveDodger);
-  alert('YOU LOSE!');
-}
 
 function moveDodger(e) {
   // implement me!

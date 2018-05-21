@@ -68,18 +68,17 @@ function createRock(x) {
   function moveRock() {
     // implement me!
     rock.style.top = `${top += 2}px`;
-    if (top > GAME_HEIGHT) {
-      console.log('removed' + game.querySelector('.rock'));
-      game.removeChild(rock);
-      debugger;
-      }
     if (top < GAME_HEIGHT){
     window.requestAnimationFrame(moveRock);
         }
     if (checkCollision(rock)===true){
       endGame();
     }
-    
+    if (top > GAME_HEIGHT) {
+      console.log('removed' + game.querySelector('.rock'));
+      game.removeChild(rock);
+      debugger;
+      }
     }
   
     

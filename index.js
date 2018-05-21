@@ -98,7 +98,7 @@ function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
   var rocks = document.getElementsByClassName('rock');
-  var rock = docu
+  console.log(rocks);
   
   for (i=0; i<rocks.length; i++){
     document.removeChild(rocks[i]);

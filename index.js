@@ -50,7 +50,7 @@ function checkCollision(rock) {
   }
 
 function createRock(x) {
-  const rock = document.createElement('div');
+  const rock = game.createElement('div');
   rock.className = 'rock';
   rock.style.left = `${x}px`;
 
@@ -77,7 +77,8 @@ function createRock(x) {
       }
   
     if (top > GAME_HEIGHT) {
-      document.removeChild(rock);
+      console.log(game.rock)
+      game.removeChild(rock);
       }
   // We should kick of the animation of the rock around here
   window.requestAnimationFrame(moveRock);

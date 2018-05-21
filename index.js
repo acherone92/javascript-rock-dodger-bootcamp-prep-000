@@ -61,9 +61,6 @@ function createRock(x) {
    * it to GAME and move it downwards.
    */
   GAME.appendChild(rock);
-  console.log(game);
-      debugger;
-
   
   /**
    * This function moves the rock. (2 pixels at a time
@@ -71,7 +68,6 @@ function createRock(x) {
   function moveRock() {
     // implement me!
     rock.style.top = `${top += 2}px`;
-    console.log('top ' + top);
     if (top < GAME_HEIGHT){
     window.requestAnimationFrame(moveRock);
     } else {
@@ -81,11 +77,9 @@ function createRock(x) {
     
     if (checkCollision(rock)===true){
       endGame();
-    }
-    
       }
+    }
   
-    
   // We should kick of the animation of the rock around here
   window.requestAnimationFrame(moveRock);
 
@@ -93,7 +87,7 @@ function createRock(x) {
   ROCKS.push(rock);
 
   return rock;
-}
+  }
 
 /**
  * End the game by clearing `gameInterval`,
@@ -106,9 +100,9 @@ function endGame() {
   clearInterval(gameInterval);
   for (i=0; i<ROCKS.length; i++){
     console.log(ROCKS);
-    console.log(game.querySelector('.rock'));
+    console.log(GAME.querySelector('.rock'));
     
-    document.removeChild(game.querySelector('.rock'));
+    document.removeChild(GAME.querySelector('.rock'));
     console.log('removed');
     console.log(game.querySelector('.rock'));
     console.log(ROCKS);

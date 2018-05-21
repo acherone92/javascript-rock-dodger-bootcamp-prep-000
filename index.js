@@ -23,7 +23,7 @@ var gameInterval = null;
 function checkCollision(rock) {
   // implement me!
   // use the comments below to guide you!
-  console.log('checkCollision trigger');
+  
   const top = positionToInteger(rock.style.top);
 
   // rocks are 20px high

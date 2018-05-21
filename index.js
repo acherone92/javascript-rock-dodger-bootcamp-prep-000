@@ -97,11 +97,14 @@ function createRock(x) {
 function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
-  console.log(document.getElementsByClassName('rock'));
-  for (var i in ROCKS){
-    document.removeChild(ROCK[i]);
+  var rocks = document.getElementsByClassName('rock');
+  console.log(rock +"rocks before removal");
+  
+  for (i=0; i<rocks.length; i++){
+    document. removeChild(rocks[i]);
   }
-  console.log(document.getElementsByClassName('rock'));
+  console.log(rock +"rocks after removal");
+  
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');
 }

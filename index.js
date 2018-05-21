@@ -23,7 +23,7 @@ var gameInterval = null;
 function checkCollision(rock) {
   // implement me!
   // use the comments below to guide you!
-  console.log('check')
+  console.log('checkCollision trigger');
   const top = positionToInteger(rock.style.top);
 
   // rocks are 20px high
@@ -41,7 +41,6 @@ function checkCollision(rock) {
     // FIXME: The rock is 20 pixel's wide -- how do we get the right edge?
     const rockRightEdge = rockLeftEdge + 20;
     if (rockRightEdge > dodgerLeftEdge && rockLeftEdge < dodgerRightEdge) {
-      console.log('collision inside');
       return true;
       }
     else {

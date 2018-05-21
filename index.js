@@ -99,11 +99,12 @@ function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
   window.removeEventListener('keydown', moveDodger);
-  alert('YOU LOSE!');
+  
   for (var i=0; i<ROCKS.length; i++){
     //GAME.removeChild(GAME.getElementsByClassNam('rock'));
     ROCKS[i].remove();
     }
+  alert('YOU LOSE!');
   }
 
 function moveDodger(e) {

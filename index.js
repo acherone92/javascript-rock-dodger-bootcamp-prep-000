@@ -110,7 +110,7 @@ function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
   for (i=0; i<ROCKS.length; i++){
-    document
+    document.removeChild(ROCKS[i]);
   }
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');

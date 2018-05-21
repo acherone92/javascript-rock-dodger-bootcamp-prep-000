@@ -71,7 +71,7 @@ function createRock(x) {
     if (top < GAME_HEIGHT){
     window.requestAnimationFrame(moveRock);
     } else {
-      console.log('')
+      console.log(ROCKS);
       console.log('removed ' + game.rock);
       console.log('game');
       console.log(game);

@@ -103,7 +103,7 @@ function endGame() {
   
   for (i=0; i<ROCKS.length; i++){
     console.log(game.querySelector('.rock'));
-    game.removeChild(game.rock.childNodes([o]));
+    game.removeChild(game.childNodes);
     console.log('for');
     console.log(game);  
     debugger;

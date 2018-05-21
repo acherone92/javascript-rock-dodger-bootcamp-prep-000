@@ -98,12 +98,12 @@ function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
   var rocks = document.getElementsByClassName('rock');
-  console.log(rock +"rocks before removal");
+  console.log(rocks +"rocks before removal");
   
   for (i=0; i<rocks.length; i++){
     document. removeChild(rocks[i]);
   }
-  console.log(rock +"rocks after removal");
+  console.log(rocks +"rocks after removal");
   
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');

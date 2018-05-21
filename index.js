@@ -69,6 +69,7 @@ function createRock(x) {
     // implement me!
     rock.style.top = `${top += 2}px`;
     console.log('top ' + top +"\nGame Height :" + GAME_HEIGHT);
+    debugger;
     if (top < GAME_HEIGHT){
     window.requestAnimationFrame(moveRock);
         }

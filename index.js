@@ -99,9 +99,8 @@ function endGame() {
   clearInterval(gameInterval);
   console.log(document.getElementsByClassName('rock'));
   for (var i in ROCKS){
-    document.removeChild('.rock)'
+    document.removeChild(ROCK[i]);
   }
-  .removeChild();
   console.log(document.getElementsByClassName('rock'));
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');

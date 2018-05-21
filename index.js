@@ -98,7 +98,7 @@ function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
   console.log(document.getElementsByClassName('rock'));
-  document.getElementsByClassName('rock').removeChild('.rock');
+  document.getElementsByClassName('rock').removeChild();
   console.log(document.getElementsByClassName('rock'));
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');

@@ -105,7 +105,7 @@ function endGame() {
     ROCKS[i].remove();
     }
   alert('YOU LOSE!');
-  brea;k
+  break;
   }
 
 function moveDodger(e) {

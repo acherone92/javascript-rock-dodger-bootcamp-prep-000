@@ -103,12 +103,13 @@ function endGame() {
   clearInterval(gameInterval);
   for (i=0; i<ROCKS.length; i++){
     console.log(ROCKS);
+    debugger;
     game.removeChild(game.querySelector('.rock'));
     ROCKS.pop(rock);
     console.log('removed');
     console.log(game.querySelector('.rock'));
     console.log(ROCKS);
-    debugger;
+    
   }
   
   

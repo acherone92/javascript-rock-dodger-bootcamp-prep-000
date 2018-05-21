@@ -101,8 +101,8 @@ function endGame() {
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');
   for (var i=0; i<ROCKS.length; i++){
-    GAME.removeChild(GAME.getElementsByClassNam('rock'));
-    debugger;
+    //GAME.removeChild(GAME.getElementsByClassNam('rock'));
+    ROCKS[i].remove();
     }
   }
 

@@ -79,7 +79,7 @@ function createRock(x) {
       game.removeChild(rock);
       debugger;
       }
-      }
+    }
   
     
   // We should kick of the animation of the rock around here

@@ -74,11 +74,15 @@ function createRock(x) {
     if (checkCollision(rock)===true){
       endGame();
     }
-    if (top > GAME_HEIGHT) {
+    function removeRock(){
       console.log('removed' + game.querySelector('.rock'));
       game.removeChild(rock);
       debugger;
+      if (top > GAME_HEIGHT) {
+        window.requestAnimationFrame(removeRock);
       }
+    }
+    
     }
   
     

@@ -55,6 +55,7 @@ function createRock(x) {
   rock.style.left = `${x}px`;
 
   var top = 0;
+  game.appendChild(rock);
 
   /**
    * Now that we have a rock, we'll need to append

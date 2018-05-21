@@ -62,6 +62,8 @@ function createRock(x) {
    */
   game.appendChild(rock);
   console.log(game);
+      debugger;
+
   
   /**
    * This function moves the rock. (2 pixels at a time

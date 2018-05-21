@@ -61,7 +61,6 @@ function createRock(x) {
    * it to GAME and move it downwards.
    */
   game.appendChild(rock);
-  console.log(game);
   
   /**
    * This function moves the rock. (2 pixels at a time
@@ -98,7 +97,7 @@ function createRock(x) {
 function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
-  console.log(document.game.first);
+  console.log(game);
   for (i=0; i<ROCKS.length; i++){
     document.removeChild(game.rock);
   }

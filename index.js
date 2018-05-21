@@ -109,8 +109,8 @@ function endGame() {
   console.log('game-over');
   clearInterval(gameInterval);
   console.log(ROCKS.toString());
-  for (var i in ROCKS){
-    document.removeChild('.rock');
+  for (i=0; i< ROCKS.length; i ++){
+    document.removeChild(ROCKS[i]);
     console.log(ROCKS);
   }
   window.removeEventListener('keydown', moveDodger);

@@ -74,6 +74,7 @@ function createRock(x) {
     } else {
         console.log(ROCKS);
         game.removeChild(rock);
+        ROCKS.pop(rock);
         console.log('removed');
         console.log(game.querySelector('.rock'));
         console.log(ROCKS);

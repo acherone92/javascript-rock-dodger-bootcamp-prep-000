@@ -72,8 +72,9 @@ function createRock(x) {
     if (top < GAME_HEIGHT){
     window.requestAnimationFrame(moveRock);
     } else {
-      (top > GAME_HEIGHT)
-      console.log('removed' + game.querySelector('.rock'));
+      (top > GAME_HEIGHT);
+      console.log('removed');
+      console.log(game.querySelector('.rock'));
       game.removeChild(rock);
       debugger;
         }

@@ -75,21 +75,7 @@ function createRock(x) {
       endGame();
     }
       }
-  /**
-   * If a rock collides with the DODGER,
-   * we should call endGame()
-   */
   
-  
-  /**
-   * Otherwise, if the rock hasn't reached the bottom of
-   * the GAME, we want to move it again.
-   */
-
-  /**
-     * But if the rock *has* reached the bottom of the GAME,
-     * we should remove the rock from the DOM
-     */
     if (top > GAME_HEIGHT) {
       document.removeChild(rock);
       }

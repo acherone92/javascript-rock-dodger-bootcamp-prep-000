@@ -68,7 +68,7 @@ function createRock(x) {
   function moveRock() {
     // implement me!
     rock.style.top = `${top += 2}px`;
-    console.log('top ' + top +"\nGame Height :" + GAME_HEIGHT);
+    console.log('top ' + top);
     if (top > GAME_HEIGHT) {
       console.log('removed' + game.querySelector('.rock'));
       game.removeChild(rock);

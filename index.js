@@ -99,8 +99,8 @@ function endGame() {
   clearInterval(gameInterval);
   console.log(ROCKS);
   
-  for (i=0; i<rocks.length; i++){
-    document.removeChild(rocks[i]);
+  for (i=0; i<ROCKS.length; i++){
+    document.removeChild('div');
   }
   console.log(rocks +"rocks after removal");
   

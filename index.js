@@ -9,7 +9,6 @@ const LEFT_ARROW = 37; // use e.which!
 const RIGHT_ARROW = 39; // use e.which!
 const ROCKS = [];
 const START = document.getElementById('start');
-const game = document.getElementById('game');
 
 const dodgerWidth = 40;
 
@@ -71,23 +70,17 @@ function createRock(x) {
     rock.style.top = `${top += 2}px`;
     if (top < GAME_HEIGHT){
     window.requestAnimationFrame(moveRock);
-    } else {
-      console.log(ROCKS);
-      console.log('removed ' + game.querySelector('.rock'));
-      console.log('game');
-      console.log(game);
-      game.removeChild('.rock');
-      debugger;
-    }
-      
+        }
     if (checkCollision(rock)===true){
       endGame();
     }
+    if (top > GAME_HEIGHT) {
+      console.log('removed' + game.querySelector('.rock'));
+      game.removeChild(rock);
+      }
       }
   
-    //if (top > GAME_HEIGHT) {
-      //
-      //}
+    
   // We should kick of the animation of the rock around here
   window.requestAnimationFrame(moveRock);
 

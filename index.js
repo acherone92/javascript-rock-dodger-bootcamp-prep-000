@@ -105,7 +105,7 @@ function endGame() {
     console.log(ROCKS);
     console.log(game.querySelector('.rock'));
     debugger;
-    game.removeChild(game.querySelector('.rock'));
+    document.removeChild(game.querySelector('.rock'));
     ROCKS.pop(rock);
     console.log('removed');
     console.log(game.querySelector('.rock'));

@@ -104,13 +104,13 @@ function endGame() {
   for (i=0; i<ROCKS.length; i++){
     console.log(ROCKS);
     console.log(game.querySelector('.rock'));
-    debugger;
+    
     document.removeChild(game.querySelector('.rock'));
     ROCKS.pop(rock);
     console.log('removed');
     console.log(game.querySelector('.rock'));
     console.log(ROCKS);
-    
+    debugger;
   }
   
   
